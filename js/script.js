@@ -13,7 +13,7 @@ $(document).ready( function() {
 });
 
 // Timeblock color-coded based on past, present, or future //
-// let hour = moment().hours();
+
 function timeBlockColor() {
     let currentHour = moment().hours();
    
@@ -32,6 +32,8 @@ function timeBlockColor() {
 };
 
 timeBlockColor();
+
+// save button function //
 
 $(".saveBtn").click(function() {
         
@@ -83,43 +85,5 @@ function renderText () {
 
 
 };
-
+// call function //
 renderText ()
-
-
-    
-
-//     function usePlanner() {
-
-//     $(".data-hour").each(function() {
-//         var currHour = $(this).text();
-//         var currPlan = localStorage.getItem(currHour);
-
-//         // console.log(this);
-//         console.log(currHour);
-
-//         if(currPlan !== null) {
-//             $(this).siblings(".plan").val(currPlan);
-//         }
-//     });
-// }
-// usePlanner();
-/**
- * CALL FUNCTIONS
- */
-
-// timeBlockColor();
-
-
-
-//     const saveBtn = $(".form-group > button");
-// saveBtn.on("click", function () {
-//   const input = $(this).siblings(".form-control");
-//   const inputValue = input.val();
-//   const inputID = input.attr("id");
-
-//   if (inputValue) {
-//     input.attr("value", inputValue);
-//     storeEventInLocalStorage(inputValue, inputID);
-//   }
-// });
